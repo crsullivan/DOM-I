@@ -52,12 +52,23 @@ let domAwesome = document.querySelector(".cta .cta-text h1");
 domAwesome.textContent=siteContent.cta['h1'];
 
 let btn = document.querySelector(".cta .cta-text button");
-btn.textContent=siteContent.cta['button']
+btn.textContent=siteContent.cta['button'];
+
+let mainContent = document.querySelectorAll('.text-content')
+
+mainContent[0].querySelector('h4').textContent = siteContent['main-content']['features-h4']
+mainContent[0].querySelector('p').textContent = siteContent['main-content']['features-content']
+mainContent[1].querySelector('h4').textContent = siteContent['main-content']['about-h4']
+mainContent[1].querySelector('p').textContent = siteContent['main-content']['about-content']
+mainContent[2].querySelector('h4').textContent = siteContent['main-content']['services-h4']
+mainContent[2].querySelector('p').textContent = siteContent['main-content']['services-content']
+mainContent[3].querySelector('h4').textContent = siteContent['main-content']['product-h4']
+mainContent[3].querySelector('p').textContent = siteContent['main-content']['product-content']
+mainContent[4].querySelector('h4').textContent = siteContent['main-content']['vision-h4']
+mainContent[4].querySelector('p').textContent = siteContent['main-content']['vision-content']
 
 let codeSnip = document.getElementById("cta-img");
 codeSnip.setAttribute('src', siteContent["cta"]["img-src"]);
-
-
 
 let codeLine = document.getElementById("middle-img");
 codeLine.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
