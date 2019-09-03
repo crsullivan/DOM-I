@@ -48,6 +48,11 @@ while(i<navBar.length){
   i++;
 }
 
+let domAwesome = document.querySelector(".cta .cta-text h1");
+domAwesome.textContent=siteContent.cta['h1'];
+
+let btn = document.querySelector(".cta .cta-text button");
+btn.textContent=siteContent.cta['button']
 
 let codeSnip = document.getElementById("cta-img");
 codeSnip.setAttribute('src', siteContent["cta"]["img-src"]);
